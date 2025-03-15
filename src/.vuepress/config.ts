@@ -7,19 +7,16 @@ export default defineUserConfig({
 
   locales: {
     "/": {
-      lang: "en-US",
-      title: "Docs Demo",
-      description: "A docs demo for vuepress-theme-hope",
-    },
-    "/zh/": {
       lang: "zh-CN",
-      title: "文档演示",
-      description: "vuepress-theme-hope 的文档演示",
+      title: "Claude - 奶油泡芙",
+      description: "Claude AI 大语言模型AI聊天中文社区",
+    },
+    "/en/": {
+      lang: "en-US",
+      title: "Claude - 奶油泡芙",
+      description: "Chinese community for Claude AI Chat",
     },
   },
 
   theme,
-
-  // Enable it with pwa
-  // shouldPrefetch: false,
 });
