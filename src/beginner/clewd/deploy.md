@@ -1,9 +1,13 @@
 ---
 title: Clewd 安装教程
 description: 一个简单易懂的 Clewd 安装配置指南
+category:
+  - 入门教程
+  - Clewd 部署
+tag:
+  - 安装
+  - 配置
 ---
-
-# Clewd 安装教程
 
 ## 环境准备
 
