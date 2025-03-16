@@ -4,16 +4,17 @@ export const enSidebar = sidebar({
   "/en/": [
     "",
     {
-      text: "Claude Tutorials",
+      text: "Beginner Tutorials",
       icon: "book",
-      prefix: "guide/",
+      collapsible: true,
+      prefix: "beginner/",
+      children: "structure",  
+    }, {
+      text: "Advanced Tutorials",
+      icon: "grommet-icons:search-advanced",
+      collapsible: true,
+      prefix: "professional/",
       children: "structure",
-    },
-    {
-      text: "API Reference",
-      icon: "code",
-      prefix: "api/",
-      children: "structure",
-    },
+    }
   ],
 });

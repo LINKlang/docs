@@ -3,27 +3,32 @@ import { navbar } from "vuepress-theme-hope";
 export const zhNavbar = navbar([
   "/",
   {
-    text: "Claude 教程",
+    text: "入门教程",
     icon: "book",
-    prefix: "/guide/",
+    prefix: "/beginner/",
+    children: [
+      "introduction",
+      {
+        text: "酒馆部署",
+        icon: "lightbulb",
+        link: "sillytavern/"
+      },
+      {
+        text: "Clewd 部署",
+        icon: "logos:claude-icon",
+        link: "clewd/",
+      },
+    ],  
+  }, {
+    text: "进阶教程",
+    icon: "grommet-icons:search-advanced",
+    prefix: "/professional/",
     children: [
       {
-        text: "使用指南",
-        icon: "lightbulb",
-        prefix: "usage/",
-        children: ["getting-started", "basic-features", "advanced-features"],
-      },
-      {
-        text: "提示词技巧",
-        icon: "magic-wand-sparkles",
-        prefix: "prompts/",
-        children: ["introduction", "techniques", "examples"],
-      },
+        text: "占位",
+        icon: "code",
+        "link": "placeholder/",
+      }
     ],
-  },
-  {
-    text: "API 参考",
-    icon: "code",
-    link: "/api/",
-  },
+  }
 ]);

@@ -4,16 +4,17 @@ export const zhSidebar = sidebar({
   "/": [
     "",
     {
-      text: "Claude 教程",
+      text: "入门教程",
       icon: "book",
-      prefix: "guide/",
+      collapsible: true,
+      prefix: "beginner/",
+      children: "structure",  
+    }, {
+      text: "进阶教程",
+      icon: "grommet-icons:search-advanced",
+      collapsible: true,
+      prefix: "professional/",
       children: "structure",
-    },
-    {
-      text: "API 参考",
-      icon: "code",
-      prefix: "api/",
-      children: "structure",
-    },
+    }
   ],
 });
