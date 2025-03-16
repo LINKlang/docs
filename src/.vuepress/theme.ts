@@ -24,7 +24,8 @@ export default hopeTheme({
       // sidebar
       sidebar: zhSidebar,
 
-      footer: "基于 VuePress Theme Hope | MIT 协议",
+      footer: "基于 <a href=\"https://theme-hope.vuejs.press/zh/\" target=\"_blank\">VuePress Theme Hope</a> 主题 | MIT 协议",
+      copyright: "Copyright © 2025-present Claude 奶油泡芙",
 
       displayFooter: true,
 
@@ -43,7 +44,8 @@ export default hopeTheme({
       // sidebar
       sidebar: enSidebar,
 
-      footer: "Powered by VuePress Theme Hope | MIT Licensed",
+      copyright: "Copyright © 2025-present Claude Cream Puff",
+      footer: 'Powered by <a href="https://theme-hope.vuejs.press/" target="_blank">VuePress Theme Hope</a> theme | MIT License',
 
       displayFooter: true,
 
@@ -140,13 +142,13 @@ export default hopeTheme({
   plugins: {
     // Note: This is for testing ONLY!
     // You MUST generate and use your own comment service in production.
-    comment: {
-      provider: "Giscus",
-      repo: "vuepress-theme-hope/giscus-discussions",
-      repoId: "R_kgDOG_Pt2A",
-      category: "Announcements",
-      categoryId: "DIC_kwDOG_Pt2M4COD69",
-    },
+    // comment: {
+    //   provider: "Giscus",
+    //   repo: "vuepress-theme-hope/giscus-discussions",
+    //   repoId: "R_kgDOG_Pt2A",
+    //   category: "Announcements",
+    //   categoryId: "DIC_kwDOG_Pt2M4COD69",
+    // },
 
     components: {
       components: ["Badge", "VPCard"],

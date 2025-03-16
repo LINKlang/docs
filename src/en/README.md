@@ -58,7 +58,4 @@ highlights:
         icon: line-md:discord
         details: "Cream Puff"
         link: https://discord.gg/5V2nrzxj47
-
-copyright: "Copyright © 2025-present Claude Cream Puff"
-footer: 'Using <a href="https://theme-hope.vuejs.press/zh/" target="_blank">VuePress Theme Hope</a> theme | MIT License'
 ---

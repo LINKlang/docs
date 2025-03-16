@@ -58,7 +58,4 @@ highlights:
         icon: line-md:discord
         details: 奶油泡芙
         link: https://discord.gg/5V2nrzxj47
-
-copyright: Copyright © 2025-present Claude 奶油泡芙
-footer: 使用 <a href="https://theme-hope.vuejs.press/zh/" target="_blank">VuePress Theme Hope</a> 主题 | MIT 协议
 ---
