@@ -1,7 +1,7 @@
 ---
 title: Cookie 获取教程
 description: 本教程将指导您如何获取 Claude 的 Cookie，这是使用 Clewd 的必要步骤
-icon: cookie
+icon: material-symbols:cookie-outline
 order: 1
 category:
   - 教程

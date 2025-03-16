@@ -7,6 +7,8 @@ category:
 tag:
   - 安装
   - 配置
+icon: icon-park-outline:install
+order: 2
 ---
 
 ## 环境准备
