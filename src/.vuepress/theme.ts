@@ -16,6 +16,11 @@ export default hopeTheme({
 
   docsDir: "src",
 
+  repo: "LINKLang/docs",
+  docsRepo: "LINKLang/docs",
+  docsBranch: "main",  
+  editLink: true, 
+
   locales: {
     "/": {
       // navbar
@@ -142,13 +147,13 @@ export default hopeTheme({
   plugins: {
     // Note: This is for testing ONLY!
     // You MUST generate and use your own comment service in production.
-    // comment: {
-    //   provider: "Giscus",
-    //   repo: "vuepress-theme-hope/giscus-discussions",
-    //   repoId: "R_kgDOG_Pt2A",
-    //   category: "Announcements",
-    //   categoryId: "DIC_kwDOG_Pt2M4COD69",
-    // },
+    comment: {
+      provider: "Giscus",
+      repo: "LINKLang/docs",
+      repoId: "R_kgDOOIig-Q",
+      category: "Announcements",
+      categoryId: "DIC_kwDOOIig-c4CoF4c",
+    },
 
     components: {
       components: ["Badge", "VPCard"],
