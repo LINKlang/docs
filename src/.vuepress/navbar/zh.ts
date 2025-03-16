@@ -15,7 +15,7 @@ export const zhNavbar = navbar([
       },
       {
         text: "Clewd 部署",
-        icon: "logos:claude-icon",
+        icon: "ri:claude-fill",
         link: "clewd/",
       },
     ],  

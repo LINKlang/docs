@@ -15,7 +15,7 @@ export const enNavbar = navbar([
       },
       {
         text: "Clewd Deployment",
-        icon: "logos:claude-icon",
+        icon: "ri:claude-fill",
         link: "clewd/",
       },
     ],  
