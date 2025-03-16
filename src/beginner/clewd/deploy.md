@@ -59,7 +59,6 @@ tag:
 ```
 :::
 
-3. 删除配置文件中 `"Cookie": "SET YOUR COOKIE HERE",` 这一行的 `SET YOUR COOKIE HERE` 内容
 
 ::: warning 注意事项
 - 确保 Cookie 格式正确
