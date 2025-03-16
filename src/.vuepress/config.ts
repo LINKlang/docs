@@ -17,6 +17,8 @@ export default defineUserConfig({
       description: "Chinese community for Claude AI Chat",
     },
   },
-
+  head: [
+    ['link', { rel: 'icon', href: '/logo.ico' }]
+  ],
   theme,
 });
