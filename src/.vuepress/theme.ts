@@ -16,6 +16,11 @@ export default hopeTheme({
 
   docsDir: "src",
 
+  repo: "LINKLang/docs",
+  docsRepo: "LINKLang/docs",
+  docsBranch: "main",  
+  editLink: true, 
+
   locales: {
     "/": {
       // navbar
