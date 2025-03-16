@@ -67,17 +67,14 @@ tag:
 ## 常见问题
 
 ::: danger Cookie 安全提醒
-- Cookie 是您的身份凭证，请勿分享给他人
-- 定期更换 Cookie 以确保安全
-- 不要在不信任的设备上保存 Cookie
+- Cookie 是您的账号凭证，请勿分享给他人
 :::
 
 ### Cookie 有效期
 
 ::: note
 - Cookie 通常有 7 天的有效期
-- 如果提示 Cookie 失效，请重新获取
-- 建议定期更新 Cookie 以保持连接稳定
+- 如果提示 Cookie 失效，请检查 Claude 账号状态，若依旧有效，请重新获取
 :::
 
 ### 复制注意事项
