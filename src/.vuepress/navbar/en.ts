@@ -5,7 +5,7 @@ export const enNavbar = navbar([
   {
     text: "Beginner Tutorials",
     icon: "book",
-    prefix: "/beginner/",
+    prefix: "en/beginner/",
     children: [
       "introduction",
       {
@@ -23,7 +23,7 @@ export const enNavbar = navbar([
   {
     text: "Advanced Tutorials",
     icon: "grommet-icons:search-advanced",
-    prefix: "/professional/",
+    prefix: "en/professional/",
     children: [
       {
         text: "Placeholder",
