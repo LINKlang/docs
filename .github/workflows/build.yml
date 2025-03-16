@@ -2,26 +2,49 @@ name: CI
 
 on:
   push:
-    branches: [ main ]
+    branches:
+      - main
   pull_request:
-    branches: [ main ]
-  workflow_dispatch:
+    branches:
+      - main
 
 jobs:
-  build:
+  report-status:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout repository
+      - name: Checkout code
         uses: actions/checkout@v3
 
       - name: Setup Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: '20.6.0'
+          node-version: '20.6'
 
       - name: Install dependencies
         run: npm install
 
       - name: Build docs
+        id: build
         run: npm run docs:build
+        continue-on-error: true
+
+      - name: Report status success
+        if: ${{ steps.build.outcome == 'success' }}
+        run: |
+          echo "Reporting success for commit ${{ github.sha }}"
+          curl -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" \
+               -H "Content-Type: application/json" \
+               --request POST \
+               --data "{\"state\": \"success\", \"target_url\": \"${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}\", \"description\": \"构建成功\", \"context\": \"ci/report-status\"}" \
+               https://api.github.com/repos/${{ github.repository }}/statuses/${{ github.sha }}
+
+      - name: Report status failure
+        if: ${{ steps.build.outcome != 'success' }}
+        run: |
+          echo "Reporting failure for commit ${{ github.sha }}"
+          curl -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" \
+               -H "Content-Type: application/json" \
+               --request POST \
+               --data "{\"state\": \"failure\", \"target_url\": \"${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}\", \"description\": \"构建失败\", \"context\": \"ci/report-status\"}" \
+               https://api.github.com/repos/${{ github.repository }}/statuses/${{ github.sha }}
