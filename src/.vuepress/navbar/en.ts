@@ -5,31 +5,11 @@ export const enNavbar = navbar([
   {
     text: "Beginner Tutorials",
     icon: "book",
-    prefix: "en/beginner/",
-    children: [
-      "introduction",
-      {
-        text: "SillyTavern Deployment",
-        icon: "lightbulb",
-        link: "sillytavern/"
-      },
-      {
-        text: "Clewd Deployment",
-        icon: "ri:claude-fill",
-        link: "clewd/",
-      },
-    ],  
+    link: "en/beginner/",
   },
   {
     text: "Advanced Tutorials",
     icon: "grommet-icons:search-advanced",
-    prefix: "en/professional/",
-    children: [
-      {
-        text: "Placeholder",
-        icon: "code",
-        link: "placeholder/",
-      }
-    ],
+    link: "en/professional/",
   }
 ]);

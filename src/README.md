@@ -12,7 +12,7 @@ tagline: Claude AI 大语言模型AI聊天中文社区
 actions:
   - text: 快速上手
     icon: lightbulb
-    link: ./beginner/introduction.html
+    link: ./beginner/
     type: primary
 
   - text: 教程指北
