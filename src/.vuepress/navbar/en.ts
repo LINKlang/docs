@@ -11,5 +11,9 @@ export const enNavbar = navbar([
     text: "Advanced Tutorials",
     icon: "grommet-icons:search-advanced",
     link: "en/professional/",
+  }, {
+    text: "API Tutorial",
+    icon: "ant-design:api-outlined",
+    link: "en/xiaoshuiapi/",
   }
 ]);

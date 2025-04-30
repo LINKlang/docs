@@ -15,6 +15,12 @@ export const zhSidebar = sidebar({
       collapsible: true,
       prefix: "professional/",
       children: "structure",
+    }, {
+      text: "API教程",
+      icon: "ant-design:api-outlined",
+      collapsible: true,
+      prefix: "xiaoshuiapi/",
+      children: "structure",
     }
   ],
 });

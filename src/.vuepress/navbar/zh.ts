@@ -10,5 +10,9 @@ export const zhNavbar = navbar([
     text: "进阶教程",
     icon: "grommet-icons:search-advanced",
     link: "/professional/",
+  }, {
+    text: "API 教程",
+    icon: "ant-design:api-outlined",
+    link: "/xiaoshuiapi/",
   }
 ]);
