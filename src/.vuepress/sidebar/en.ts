@@ -15,6 +15,12 @@ export const enSidebar = sidebar({
       collapsible: true,
       prefix: "professional/",
       children: "structure",
+    }, {
+      text: "API Tutorial",
+      icon: "ant-design:api-outlined",
+      collapsible: true,
+      prefix: "xiaoshuiapi/",
+      children: "structure",
     }
   ],
 });
