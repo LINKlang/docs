@@ -170,10 +170,7 @@ export default hopeTheme({
     },
 
     sitemap: {
-      excludePaths: [
-        "/demo/**",
-        "/en/demo/**",
-      ]
+      devServer: true,
     },
 
   },
