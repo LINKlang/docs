@@ -164,5 +164,12 @@ export default hopeTheme({
       prefix: "fa6-solid:",
     },
 
+    seo: {
+      autoDescription: true,
+      canonical: "https://docs.ashesb.com"
+    },
+
+    sitemap: true,
+
   },
 });
