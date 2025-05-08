@@ -175,4 +175,6 @@ export default hopeTheme({
         "/en/demo/**",
       ]
     },
+
+  },
 });
