@@ -169,7 +169,12 @@ export default hopeTheme({
       canonical: "https://docs.ashesb.com"
     },
 
-    sitemap: true,
+    sitemap: {
+      excludePaths: [
+        "/demo/**",
+        "/en/demo/**",
+      ]
+    },
 
   },
 });
