@@ -2,3 +2,5 @@ User-agent: *
 Allow: /
 Sitemap: https://docs.ashesb.com/sitemap.xml
 Host: docs.ashesb.com
+Disallow:/demo/
+Disallow:/en/demo/
