@@ -42,7 +42,6 @@ highlights:
 
   - header: 加入我们
     description: 我们的社区
-    image: humbleicons:arrow-side-join-main
     bgImage: https://theme-hope-assets.vuejs.press/bg/2-light.svg
     bgImageDark: https://theme-hope-assets.vuejs.press/bg/2-dark.svg
     bgImageStyle:
